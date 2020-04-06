@@ -1,0 +1,24 @@
+﻿@model FileUpload_6April.Models.FileUpload
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 style="color:darkgoldenrod">IndexPage to display UploadFile()</h2>
+<h4>FileUpload</h4>
+<hr />
+<form enctype="multipart/form-data" method="post" asp-action="UploadFile">
+    <dl>
+        <dt>
+            <label asp-for="@Model.FormFile"></label>
+        </dt>
+        <dd>
+            <input asp-for="@Model.FormFile" type="file" />
+        </dd>
+    </dl>
+    <input type="submit" value="ImageUpload/FileUpload" class="btn btn-dark" />
+</form>
+
+
+
+
